@@ -39,7 +39,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     contactList.city = getInputValueById('#city');
     contactList.state = getInputValueById('#state');
     contactList.zip = getInputValueById('#zip');
-    alert("Save");
     return contactList;
   }
   
@@ -55,8 +54,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     } else {
         addressBookList = [contactList];
     }
-    alert(addressBookList.toString());
-    localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
   }
   const createId = () => {
     var id = localStorage.getItem("currentId");
