@@ -58,3 +58,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     alert(addressBookList.toString());
     localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
   }
+  const createId = () => {
+    var id = localStorage.getItem("currentId");
+    if (id == undefined) {
+        localStorage.setItem("currentId", 1);
+        return 2;
+    } else {
+        id = id + 1;
+        localStorage.setItem("currentId", id);
+        return id;
+    }
+  };
