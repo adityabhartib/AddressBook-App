@@ -28,8 +28,18 @@ const createInnerHtml = () => {
                     <img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
                     <img id="1" alt="edit" onclick="update(this)" src="../assets/icons/create-black-18dp.svg">
                 </td>
-            </tr>
-        `;
+            </tr>`;
     }
     document.querySelector('#display').innerHTML = innerHtml;
+}
+const remove = (node) => {
+    let addrAddressData = addrBookList.find(addrData => addrData._id == node.id);
+   if(!addrAddressData) return;
+    const index = addrBookList 
+                    .map(addrData => addrData._id)
+                    .indexOf(addrAddressData._id);
+                    addrBookList.splice(index, 1);
+    localStorage.setItem('AddressBookList', JSON.stringify(addrBookList));
+    document.querySelector('.per-count').textContent = addrBookList.length;
+    createInnerHtml();
 }
