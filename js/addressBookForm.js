@@ -24,7 +24,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
   });
   
-  //on save
   const save = () => {
     let contactList = createAddressbook();
     createAndUpdateStorage(contactList);
