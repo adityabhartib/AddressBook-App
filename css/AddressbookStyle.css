@@ -4,8 +4,8 @@ body {
 }
 
 .header {
-    padding: 15px 0;
-    background-color: aliceblue;
+    padding: 32px 0;
+    background-color: rgb(238, 234, 234);
 }
 
 .header-content {
@@ -13,86 +13,35 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
     width: 80%;
 }
 
-.logo-content-img {
-    border: 0px solid #42515f;
+.logo {
+    padding: 0 10px;
+    width: 60px;
 }
 
-.emp-text {
+.adr-text {
     font: normal normal bold 20px/25px Montserrat;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82A70C;
-    padding-left: 10px;
+    color: #008CFF;
     text-transform: capitalize;
 }
 
-.emp-payroll {
-    color: #42515f;
+.addr-book {
+    color: #42515F;
+    
 }
 
 * {
     box-sizing: border-box;
 }
-/*UC2*/
-
-.form-content{
-    min-height: calc(100% - 80px);
-    background-color: #e4eeeb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form {
-    width: 65%;
-    padding: 44px 60px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border: 3px solid #f5f5f5;
-    border-radius: 8px;
-    opacity: 1;
-}
-.form-head {
-    font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 1px;
-    color: #42515f;
-    text-transform: capitalize;
-    opacity: 1;
-    padding-bottom: 20px;
-}
-.row-content {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-}
- .label {
-    min-width: 140px;
- }
- label{
-    padding: 12px 12px 12px 0;
-    display: inline-block;
- }
-.text{
-    font-size: 16px;
-    color: #42515f;
-    opacity: 1;
-    font-family: Roboto;
-}
-.input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-} 
