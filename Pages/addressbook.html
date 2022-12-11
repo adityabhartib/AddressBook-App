@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/AddressbookStyle.css">
     <title>Address Book</title>
 </head>
 <body>
@@ -17,5 +18,16 @@
             </div>
         </div>
     </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event); false" onreset="reset()">
+            <div class="form-head">
+                <span class="form-head-text">PERSON ADDRESS FORM</span>
+                <span class="cross-icon">
+                    <img src="../assets/images/cross_icon.png" class="close-circle" name="close-circle" onclick="cancel();">
+                    </ion-icon>
+                </span>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
